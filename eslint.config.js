@@ -15,7 +15,7 @@ export default tseslint.config(
     ],
     files: ['src/**/*.{ts}'],
     languageOptions: {
-      ecmaVersion: 'latest',
+      ecmaVersion: 2022,
       sourceType: 'module',
       globals: globals.node,
       parserOptions: {
