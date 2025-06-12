@@ -15,7 +15,7 @@ export default tseslint.config(
     ],
     files: ['src/**/*.{ts}'],
     languageOptions: {
-      ecmaVersion: 2022,
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: globals.node,
       parserOptions: {
@@ -29,7 +29,6 @@ export default tseslint.config(
     rules: {
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
-      '@typescript-eslint/no-unused-vars': 'error',
     },
   },
 );
