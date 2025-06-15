@@ -15,9 +15,11 @@
     "noImplicitOverride": true,
 
     "module": "nodenext",
-    "outDir": "dist",
+    "moduleResolution": "nodenext",
+    "outDir": "build",
     "sourceMap": true,
 
     "lib": ["es2022"]
-  }
+  },
+  "include": ["src"]
 }
