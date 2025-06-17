@@ -10,7 +10,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
       amount: zod.number(),
       type: zod.enum(['credit', 'debit']),
     });
-
+ 
     const { title, amount, type } = createTransactionBodySchema.parse(
       request.body,
     );
