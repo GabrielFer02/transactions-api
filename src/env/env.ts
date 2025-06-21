@@ -11,8 +11,9 @@ const envSchema = zod.object({
   NODE_ENV: zod
     .enum(['development', 'test', 'production'])
     .default('production'),
+  DATABASE_CLIENT: zod.enum(['better-sqlite3', 'pg']).default('better-sqlite3'),
   DATABASE_URL: zod.string(),
-  PORT: zod.number().default(3333),
+  PORT: zod.coerce.number().default(3333),
 });
 
 const _env = envSchema.safeParse(process.env);
